@@ -24,8 +24,8 @@ import static mindustry.Vars.*;
 import bin0011.content.*;
 
 public class Bin0011UnitTypes implements ContentList{
-	public static UnitType
-		guram;
+        // guram class units enters mech class, you can change it
+	public static @EntityDef({Unitc.class, Mechc.class}) guram;
 	@Override
 	public void load() {
 		guram = new UnitType("guram"){{
